@@ -9,11 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-cli": "^6.26.0",
     "global": "^4.3.2",
     "react": "^16.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1"

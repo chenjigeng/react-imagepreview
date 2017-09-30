@@ -52,6 +52,9 @@ class ImagePreview extends React.Component {
     this.state = {
       computedImageState: {},
     }
+    this.handleResize = throttle(() => {
+      this.getComputedStyle();
+    }, 200);
   }
 
   componentWillMount () {
@@ -72,9 +75,11 @@ class ImagePreview extends React.Component {
       this.getComputedStyle();
     }
     // 使用节流函数，防止过度渲染
-    window.addEventListener('resize', throttle(() => {
-      this.getComputedStyle();
-    }, 200));
+    window.addEventListener('resize', this.handleResize);
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.handleResize);
   }
 
   getInitStyles () {

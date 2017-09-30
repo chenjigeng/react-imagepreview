@@ -4,7 +4,7 @@ import demo1 from './1.jpeg'
 import demo2 from './2.jpg'
 import demo3 from './3.jpg'
 import './App.css';
-import imagePreviewSingleton from './lib'
+import imagePreviewSingleton from 'react-imagepreview'
 
 class App extends Component {
   render() {

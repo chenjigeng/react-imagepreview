@@ -1,13 +1,21 @@
 {
   "name": "react-imagepreview",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A react image Preview tools",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "chenjigeng",
-  "license": "ISC",
+  "author": {
+    "name": "chenjigeng",
+    "url": "https://github.com/chenjigeng",
+    "email": "178854407@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenjigeng/react-imagepreview"
+  },
+  "license": "MIT",
   "dependencies": {
     "global": "^4.3.2",
     "react": "^16.0.0"
